@@ -62,7 +62,7 @@ nav ul li a {
     flex-direction: column;
     text-align: center;
     color: white;
-    line-height: 7vh;
+    line-height: 5vh;
 }
 
 .about h3 {
@@ -73,10 +73,13 @@ nav ul li a {
 .about h1 {
     color: white;
     font-size: 6vh;
+
 }
 
 .about h3 {
     font-size: 3vh;
+    text-decoration: underline;
+
 }
 
 
@@ -159,7 +162,7 @@ font-size: 12px;
 .about-me p{
     color: white;
 margin-top:8%;
-font-size: 1rem;
+font-size: 1.5rem;
 font-weight: bolder;
 line-height: 3vh;
 
@@ -181,28 +184,103 @@ padding: 0 10%;
 }
 
 /* PROJECTS */
+
+.project-container{
+    width: 100vw;
+
+
+}
 .projects{
-    
+margin: 20px;
+border-radius: 5px ;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+border: 2px solid white;
+
 }
+
 
 .pro-image img{
     height: 30vh;
-    width: 30vw;
+    width: 90vw;
 }
-.pro-image img{
-    height: 30vh;
-    width: 80vw;
+.pro-about{
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;
+}
+.pro-about h2{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.pro-about button{
+    width: 100px;
+    margin: 20px 0;
+    height: 40px;
+    color: rgb(254, 254, 254);
+    border-radius: 5px;
+    border: 1px solid white;
+background: rgb(83, 83, 83);
 
 }
+.pro-about button a{
+text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(83, 83, 83);
+    width: 100px;
+    height: 40px;
+}
 
+.seemore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seemore button{
+        margin: 20px 0;
+        height: 40px;
+        color: rgb(254, 254, 254);
+        border-radius: 5px;
+        border: 1px solid white;
+    background: rgb(83, 83, 83);
+}
+.seemore button a{
+    text-decoration: none;
+        color: rgb(255, 255, 255);
+        background: rgb(83, 83, 83);
+        width: 100px;
+        height: 40px;
+        padding: 10px;
+    }
 @media(min-width:500px){
-
+    .projects{
+        width: 25.5vw;
+    }
     .project-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
     .pro-image img{
         height: 30vh;
-        width: 30vw;
+        width: 25vw;
+        object-fit: cover;
     }
 }
+
+/* contact us
+.icon{
+
+    background: white;
+    height: 200px;
+    width: 200px;
+}
+
+.icon svg{
+    color: rgb(143, 63, 63);
+    background: white;
+} */
