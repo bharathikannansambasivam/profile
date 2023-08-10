@@ -164,7 +164,6 @@ font-size: 12px;
 margin-top:8%;
 font-size: 1.5rem;
 font-weight: bolder;
-line-height: 3vh;
 
 padding: 0 10%;
 
@@ -336,3 +335,59 @@ color: white;
 }
 
 /* hambu */
+/* ... your existing CSS ... */
+
+/* Hamburger menu icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  /* Hide navigation links initially */
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  /* Media query for screens below 500px */
+  @media (max-width: 500px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px; /* Adjust as needed */
+      width: auto;
+      background-color: #000;
+      z-index: 1;
+      right: -100%; /* Move the menu off the screen to the left */
+      transition: left 0.3s ease-in-out;
+    }
+    
+  
+    nav ul.active {
+      display: flex;
+      right: 0;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  

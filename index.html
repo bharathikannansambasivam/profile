@@ -18,19 +18,23 @@
 
 <body>
     <header>
-        <nav>
-            <h2 id="portfolio">Port<span>folio</span></h2>
-            <ul>
-                <li><a href="#HOME">Home</a></li>
-                <li><a href="#ABOUT">About Us</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#PROJECTS">Projects</a></li>
-                <li><a href="#">Contact Us</a></li>
+            <nav>
+                <h2 id="portfolio">Port<span>folio</span></h2>
 
-
-            </ul>
-
-        </nav>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul>
+                    <li><a href="#HOME">Home</a></li>
+                    <li><a href="#ABOUT">About Us</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#PROJECTS">Projects</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- ... rest of your header content ... -->
         <div id="HOME" class="picture">
             <img src="images/ceca670d-31cd-4f7b-a10e-10bc5b69c181-removebg.png" alt="">
         </div>
@@ -175,7 +179,7 @@
     </div>
     <div class="contact-item">
         <span class="icon"><i class="far fa-envelope"></i></span>
-        <span class="info">></a>bharathikannansambasivam@gmail.com</a></span>
+        <span class="info"></a>bharathikannansambasivam@gmail.com</a></span>
     </div>
     <div class="contact-item">
         <span class="icon"><i class="fas fa-phone"></i></span>
@@ -187,12 +191,29 @@
    
     <a href="mailto:bharathikannansambasivam@gmail.com"> <i class="far fa-envelope"></i></a>
 
-    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.instagram.com/bk_bharathikannan"><i class="fab fa-instagram"></i></a>
     <a href="https://bharathikannansambasivam.medium.com/"><i class="fab fa-medium"></i></a>
-    <a href="#"><i class="fab fa-wordpress"></i></a>
+    <a href="https://bharathikannansambasivam.wordpress.com/"><i class="fab fa-wordpress"></i></a>
     <a href="https://www.linkedin.com/in/bharathikannan-sambasivam-458509222/"><i class="fab fa-linkedin"></i></a>
     <a href="https://github.com/bharathikannansambasivam"><i class="fab fa-github"></i></a>
 </div>
+<script>// Add this to your existing JavaScript or in a <script> tag in your HTML
 
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector("nav ul");
+    
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+    
+    // Add this code to close the navigation links when a link is clicked
+    const navItems = document.querySelectorAll("nav ul li a");
+    
+    navItems.forEach(item => {
+      item.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+    </script>
 </body>
 </html>
