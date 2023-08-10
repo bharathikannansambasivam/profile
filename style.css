@@ -318,6 +318,7 @@ color: white;
 .social-icons{
     border: 2px solid white;
     margin-bottom: 5vh;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
     gap: 3vw;
