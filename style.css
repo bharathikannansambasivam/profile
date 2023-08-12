@@ -109,7 +109,7 @@ nav ul li a {
 
 /* skills */
 .title{
-    color: white;
+margin-left: 20px;    color: white;
 border-bottom: 5px solid aqua;
 font-size: 20px;
 display: inline-block;
