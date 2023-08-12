@@ -17,7 +17,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     color: white;
-    padding: 5% 5% 0 5%;
+    padding: 5% 0% 0 5%;
 }
 
 nav h2 {
@@ -223,6 +223,7 @@ flex-direction: column;
 justify-content: center;
 border: 2px solid white;
 overflow: hidden;
+box-shadow: 0px 5px 20px 10px rgba(3, 219, 235, 0.5)
 
 }
 
@@ -231,6 +232,7 @@ overflow: hidden;
     height: 30vh;
     width: 90vw;
     overflow: hidden;
+    padding: 5px;
 
 }
 .pro-about{
@@ -370,13 +372,15 @@ color: white;
     font-size: 16px;
 }
 .social-icons{
+    width: auto;
     border: 2px solid white;
     margin-bottom: 5vh;
     padding: 10px 0;
     display: flex;
     justify-content: center;
     gap: 3vw;
-    overflow:hidden;}
+    overflow:hidden;
+}
 .social-icons a {
     color: white;
     font-size: 24px;
@@ -388,6 +392,9 @@ color: white;
 .social-icons a:hover {
     color: #007bff;
 }
+
+
+
 
 
 
@@ -463,4 +470,37 @@ color: white;
     100% {
         border-color: aqua;
     }
+}
+
+
+
+:root {
+	--d: 200ms;
+	--angle: 180deg;
+
+	--c1: rgba(168, 239, 255, 1);
+	--c2: rgba(168, 239, 255, 0.1);
+}
+.social-icons{
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 3vw;
+	border-image: conic-gradient(from 
+    var(--angle),rgb(0, 179, 255), var(--c1) 0.1turn,
+     var(--c1) 0.15turn,
+      var(--c2) 0.25turn) 30;
+	animation: borderRotate 200ms  infinite ;
+}
+
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+    70% {
+		--angle: 320deg;
+	}30% {
+		--angle: 230deg;
+	}
 }
