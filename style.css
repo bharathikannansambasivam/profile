@@ -24,8 +24,29 @@ nav h2 {
     font-size: 35px;
     color: white;
     letter-spacing: 2px;
-
+/* border: 3px solid red; */
 }
+
+nav h2 {
+    font-size: 35px;
+    color: white;
+    letter-spacing: 2px;
+    border-bottom: 3px solid transparent; 
+    display: inline-block; 
+    padding: 0 15px; 
+    
+    /* Apply the animation initially */
+    animation: borderAnimation .5s alternate infinite;
+}
+
+
+
+
+
+
+
+
+
 
 nav h2 span {
     color: aqua;
@@ -34,6 +55,8 @@ nav h2 span {
 nav ul li {
     color: white;
     display: inline-block;
+    border: 2px solid red;
+    animation: borderAnimation .5s alternate infinite;
 
     list-style: none;
 }
@@ -68,6 +91,8 @@ nav ul li a {
 .about h3 {
     letter-spacing: 2px;
     /* color: rgb(0, 213, 255); */
+  
+
 }
 
 .about h1 {
@@ -89,6 +114,8 @@ nav ul li a {
 border-bottom: 5px solid aqua;
 font-size: 20px;
 display: inline-block;
+animation: headingAnimation .5s alternate infinite;
+
 
 }
 
@@ -301,15 +328,44 @@ text-decoration: none;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    justify-content: flex-start ;
 }
-
+.contact-item p{
+word-wrap: break-word;
+    color: rgb(255, 255, 255);
+}
 .icon {
     font-size: 24px;
-    margin-right: 10px;   
-
+    margin-right: 10px;
 }
 .icon i{
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media(max-width:300px){
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: flex-start ;
+        width: 100%;
+    }
+    .contact-item .info{
+        width:95%;
+    word-wrap: break-word;
+        color: rgb(255, 255, 255);
+    }
+    .icon {
+        font-size: 24px;
+    background: rgb(211, 193, 193);
+    width:10%;
+    }
+
 }
 .info {    
 color: white;
@@ -335,8 +391,7 @@ color: white;
     color: #007bff;
 }
 
-/* hambu */
-/* ... your existing CSS ... */
+
 
 /* Hamburger menu icon */
 .hamburger {
@@ -392,3 +447,22 @@ color: white;
     }
   }
   
+  @keyframes borderAnimation {
+    0% {
+        border-color: red;
+    }
+   
+    100% {
+        border-color: yellow;
+    }
+}
+
+@keyframes headingAnimation {
+    0% {
+        border-color: rgb(246, 246, 246);
+    }
+   
+    100% {
+        border-color: aqua;
+    }
+}
