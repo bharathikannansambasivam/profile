@@ -55,8 +55,7 @@ nav h2 span {
 nav ul li {
     color: white;
     display: inline-block;
-    border: 2px solid red;
-    animation: borderAnimation .5s alternate infinite;
+   
 
     list-style: none;
 }
@@ -192,7 +191,6 @@ margin-top:8%;
 font-size: 1.5rem;
 font-weight: bolder;
 
-padding: 0 10%;
 
 }
 @media(max-width:500px){
@@ -346,7 +344,7 @@ word-wrap: break-word;
 
 }
 
-@media(max-width:300px){
+@media(max-width:400px){
 
     .contact-item {
         display: flex;
@@ -378,7 +376,7 @@ color: white;
     display: flex;
     justify-content: center;
     gap: 3vw;
-}
+    overflow:hidden;}
 .social-icons a {
     color: white;
     font-size: 24px;
@@ -419,7 +417,7 @@ color: white;
   }
   
   /* Media query for screens below 500px */
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     .hamburger {
       display: flex;
     }
