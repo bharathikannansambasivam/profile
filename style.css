@@ -440,7 +440,7 @@ color: white;
   @media (max-width: 800px) {
     .hamburger {
       display: flex;
-      margin-right: 10px;
+      margin-right: 10%;
     }
   
     nav ul {
