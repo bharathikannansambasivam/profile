@@ -179,11 +179,12 @@ font-size: 12px;
 }
 .aboutus h2{
     text-align: center;
-    margin-top:7% ;
+    margin-top:5% ;
     color: aqua;
 }
 .about-me{
     padding: 1rem;
+
 }
 .about-me p{
     color: white;
@@ -199,14 +200,26 @@ font-weight: bolder;
     display: block;
     }
     .aboutus img{
-        width: 100vw;
+        width: 80vw;
         height: 40vh;
         align-items: center;
         justify-content: center;
         display: flex;
     }
 }
+@media(max-width:700px){
+    .aboutus{
 
+    display: block;
+    }
+    .aboutus img{
+        width: 80vw;
+        height: 40vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
 /* PROJECTS */
 
 .project-container{
@@ -427,6 +440,7 @@ color: white;
   @media (max-width: 800px) {
     .hamburger {
       display: flex;
+      margin-right: 10px;
     }
   
     nav ul {
@@ -437,7 +451,8 @@ color: white;
       width: auto;
       background-color: #000;
       z-index: 1;
-      right: -100%; /* Move the menu off the screen to the left */
+      right: -100%;
+     /* Move the menu off the screen to the left */
       transition: left 0.3s ease-in-out;
     }
     
