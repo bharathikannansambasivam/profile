@@ -305,7 +305,8 @@ text-decoration: none;
     }
     .project-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;gap: 2%;
+       
     }
     .pro-image img{
         height: 30vh;
