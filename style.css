@@ -115,7 +115,7 @@
     height: 20px;
     background: aqua;
     position: relative;
-    animation: per_bar 7s;
+    /* animation: per_bar 7s; */
     }
     .percentage::before {
     content: attr(per);
@@ -197,13 +197,13 @@
     justify-content: center;
     border: 2px solid white;
     overflow: hidden;
-    box-shadow: 0px 5px 20px 10px rgba(3, 219, 235, 0.5)
+    box-shadow: 0px 5px 10px 8px rgba(3, 219, 235, 0.5)
     }
     .pro-image img{
     height: 30vh;
     width: 90vw;
     overflow: hidden;
-    padding: 5px;
+    padding: 20px;
     }
     .pro-about{
     color: white;
@@ -260,11 +260,14 @@
     }
     .project-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
     }
     .pro-image img{
     height: 30vh;
     width: 25vw;
+    padding: 10px;
+
     overflow: hidden;
     }
     }
