@@ -360,7 +360,7 @@ word-wrap: break-word;
 
 }
 .contact-form{
-    width: 50%;
+    width: 60%;
     margin: 5% 0 5% 5%;
 }
 .contactus-form{
@@ -415,9 +415,21 @@ form button:hover{
         font-size: 24px;
     background: rgb(211, 193, 193);
     width:10%;
+    
     }
+   
 
 }
+@media(max-width:800px){
+.contact-form{
+    width: 80%;
+    margin: 5% 0 5% 5%;
+}
+
+}
+
+
+
 .info {    
 color: white;
     font-size: 16px;
