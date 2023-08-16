@@ -16,32 +16,78 @@ navItems.forEach(item => {
 });
 
 
+  gsap.from(".percentage",{
+      scrollTrigger : ".percentage",
+      right:500,
+      ease: Power2.easeInOut,
+      duration:1.5,
+      stagger:0
+  });
 
-gsap.from(".percentage",{
-    scrollTrigger : ".percentage",
-    right:500,
-    ease: Power2.easeInOut,
+
+
+  gsap.from(".skill-bar",{
+    scrollTrigger : ".skill-bar",
+
     duration:2,
-    stagger:0,
-  
-});
+    ease: Power2.easeInOut,
+    opacity:0,
 
-gsap.from(".skill-bar",{
-  scrollTrigger : ".skill-bar",
+  })
 
-  duration:2.5,
-  ease: Power2.easeInOut,
+gsap.from(".social-icons a",{
+
+  scrollTrigger:".social-icons",
   opacity:0,
+  stagger:.3
 
+}
+)
+
+gsap.from("nav ul li",{
+
+  scrollTrigger:"nav",
+  opacity:0,
+  stagger:.3
+
+}
+)
+  gsap.from("#portfolio",{
+    opacity:0,
+    y:"-100vh",
+    rotation:"3600"
+  })
+
+gsap.from(".about h3",{
+  x:"120vh",
+  opacity:0,
+  ease:"bounce",
+  duration:1
+})
+  
+gsap.from(".about h2",{
+  x:"-120vh",
+  opacity:0,
+  ease:"bounce",
+  duration:1
+})
+  
+gsap.from(".projects",{
+  scrollTrigger:".project-container",
+  opacity:0,
+  stagger:.3
 })
 
 
 
+gsap.from(".seemore button",{
+  scrollTrigger:".seemore",
 
+  opacity:0,
+rotation:720,
+delay:""
 
-
-
-
+})
 
 
 
