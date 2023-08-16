@@ -21,11 +21,19 @@ gsap.from(".percentage",{
     scrollTrigger : ".percentage",
     right:500,
     ease: Power2.easeInOut,
-    duration:3,
-    stagger:0
+    duration:2,
+    stagger:0,
+  
 });
 
+gsap.from(".skill-bar",{
+  scrollTrigger : ".skill-bar",
 
+  duration:2.5,
+  ease: Power2.easeInOut,
+  opacity:0,
+
+})
 
 
 
