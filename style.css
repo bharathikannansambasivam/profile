@@ -213,27 +213,29 @@
     overflow: hidden;
     padding: 20px;
     }
+   
+    */
     .pro-about{
-    color: white;
+        color: white;
+    
+    
+    
+    
 
-
-
-
-
-
-
-
-
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    }
-    .pro-about h2{
-    margin-bottom: 10px;
-    text-decoration: underline;
-    }
+    
+    
+    
+    
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+        .pro-about h2{
+        margin-bottom: 10px;
+        text-decoration: underline;
+        }
     .pro-about button{
     width: 100px;
     margin: 20px 0;
@@ -242,6 +244,9 @@
     border-radius: 5px;
     border: 1px solid white;
     background: rgb(83, 83, 83);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; 
     }
     .pro-about button a{
     text-decoration: none;
@@ -249,7 +254,8 @@
     background: rgb(83, 83, 83);
     width: 100px;
     height: 40px;
-    } */
+    margin-top: 10px;
+    } 
     .seemore{
     display: flex;
     align-items: center;
