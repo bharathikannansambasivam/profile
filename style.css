@@ -216,17 +216,26 @@
    
     */
     .pro-about{
-    color: white;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    }
-    .pro-about h2{
-    margin-bottom: 10px;
-    text-decoration: underline;
-    }
+        color: white;
+    
+    
+    
+    
+
+    
+    
+    
+    
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+        .pro-about h2{
+        margin-bottom: 10px;
+        text-decoration: underline;
+        }
     .pro-about button{
     width: 100px;
     margin: 20px 0;
@@ -245,7 +254,8 @@
     background: rgb(83, 83, 83);
     width: 100px;
     height: 40px;
-    }
+    margin-top: 10px;
+    } 
     .seemore{
     display: flex;
     align-items: center;
