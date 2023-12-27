@@ -278,7 +278,13 @@
     padding: 10px;
     }
 
-
+    @media(max-width:480px){
+        .project-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2%;
+            }
+    }
    
     /* @media(min-width:500px){
     .projects{
